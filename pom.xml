@@ -12,6 +12,9 @@
         <module>yang-engine-common</module>
         <module>yang-engine-container</module>
         <module>yang-engine-util</module>
+        <module>yang-engine-avro</module>
+        <module>yang-engine-cassandra</module>
+        <module>yang-engine-job</module>
     </modules>
     <properties>
         <spring.version>4.3.14.RELEASE</spring.version>
@@ -21,6 +24,21 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
             <version>${spring.version}</version>
         </dependency>
     </dependencies>
